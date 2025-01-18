@@ -14,10 +14,9 @@ exports.handler = async (event) => {
     }
 
     try {
-        // Decode the Base64 file content
+        
         const decodedFile = Buffer.from(fileContent, "base64");
 
-        // Upload the file to S3
         const params = {
             Bucket: bucketName,
             Key: fileName,
