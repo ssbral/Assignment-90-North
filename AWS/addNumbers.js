@@ -1,5 +1,4 @@
 exports.handler = async (event) => {
-    // Retrieve numbers from the event object
     const { num1, num2 } = event;
 
     if (typeof num1 !== "number" || typeof num2 !== "number") {
@@ -11,7 +10,6 @@ exports.handler = async (event) => {
         };
     }
 
-    // Calculate the sum
     const sum = num1 + num2;
 
     return {
